@@ -1,17 +1,23 @@
-import os
 import subprocess
 import pyautogui
-# import pywhatkit
 import datetime
 import time
 from random import choice
+# import pywhatkit
 
+"""
+    Project - F.R.I.D.A.Y.
+
+    @author Cortez, Manuel
+    @date 06/01/2025
+    
+    Clase de ejecucion y creacion de nuevos comandos.
+"""
 
 class Command:
     def __init__(self):
         self.command_dict = {
             "viernes": self.reply,
-            "dormir": self.sleep,
             # "reproduce": self.play,
             "hora": self.hour,
             "apagar": self.shutdown,
@@ -41,16 +47,13 @@ class Command:
                 voice.speak(self.command_dict[key]())
         else:
             voice.speak("No comprendo la instrucción señor.")
-        return True
     
+    @staticmethod
     def random_response(responses):
         return choice(responses)
 
     def reply(self):
         return Command.random_response(["¿Si, señor?", "Dígame, señor.", "¿En qué puedo servirle, señor?", "Siempre a sus órdenes, señor."])
-        
-    def sleep(self):
-        return Command.random_response(["Hasta pronto, señor. Apagada...", "Muy bien, señor. Fue un gusto ayudarlo. Apagada..."])
     
     # def play(self, command):
     #     pywhatkit.playonyt(command.replace("reproduce", "").strip())
@@ -60,9 +63,7 @@ class Command:
         return "La hora actual es: " + datetime.datetime.now().strftime("%H:%M:%S")
         
     def shutdown(self):
-        pyautogui.hotkey("win", "r")  
-        pyautogui.write("wt")
-        pyautogui.press("enter") 
+        self.terminal() 
         time.sleep(1.5)
         pyautogui.write("shutdown /s /t 0")
         pyautogui.press("enter")
