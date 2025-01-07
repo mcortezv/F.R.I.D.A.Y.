@@ -158,5 +158,5 @@ def  execute(self, command, voice):
 
 ---
 
-## **License**
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for more details.
+## **Licencia**
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE.md) para más detalles.
