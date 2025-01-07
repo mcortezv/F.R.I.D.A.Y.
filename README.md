@@ -87,7 +87,7 @@ def execute(self, command, voice):
 
 ### 1. Clone this repository:
    ```bash
-   git clone https://github.com/mcortezv/F.R.I.D.A.Y..git
+   git clone https://github.com/mcortezv/F.R.I.D.A.Y.
    ```
 
 ### 2. Install the necessary dependencies:
