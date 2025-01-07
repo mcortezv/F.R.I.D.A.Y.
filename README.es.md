@@ -113,29 +113,29 @@ def  execute(self, command, voice):
 
 ## **Comandos Disponibles**
 
-| **Palabra Clave**  | **Acción**                           |
+| **Palabra Clave**   | **Acción**                           |
 |---------------------|--------------------------------------|
-| `viernes`           | Responde a tu solicitud.            |
-| `hora`              | Indica la hora actual.              |
-| `apagar`            | Apaga el sistema.                  |
-| `captura`           | Realiza una captura de pantalla.    |
-| `escritorio`        | Minimiza o restaura ventanas.       |
-| `teclado`           | Cambia la distribución del teclado. |
-| `configuracion`     | Abre la configuración del sistema.  |
-| `terminal`          | Abre la terminal de comandos.       |
-| `archivos`          | Abre el explorador de archivos.     |
-| `tareas`            | Abre el administrador de tareas.    |
-| `navegador`         | Abre el navegador.                 |
-| `notas`             | Abre el bloc de notas.             |
-| `calculadora`       | Abre la calculadora.               |
-| `word`              | Abre Microsoft Word.               |
-| `copiar`            | Copia la selección actual.         |
-| `v`                 | Pega el contenido copiado.         |
-| `z`                 | Deshace el último cambio.          |
-| `x`                 | Corta la selección actual.         |
-| `todo`              | Selecciona todo el contenido.      |
-| `f4`                | Cierra la ventana activa.          |
-| `recarga`           | Refresca la página activa.         |
+| `viernes`           | Responde a tu solicitud.             |
+| `hora`              | Indica la hora actual.               |
+| `apagar`            | Apaga el sistema.                    |
+| `captura`           | Realiza una captura de pantalla.     |
+| `escritorio`        | Minimiza o restaura ventanas.        |
+| `teclado`           | Cambia la distribución del teclado.  |
+| `configuracion`     | Abre la configuración del sistema.   |
+| `terminal`          | Abre la terminal de comandos.        |
+| `archivos`          | Abre el explorador de archivos.      |
+| `tareas`            | Abre el administrador de tareas.     |
+| `navegador`         | Abre el navegador.                   |
+| `notas`             | Abre el bloc de notas.               |
+| `calculadora`       | Abre la calculadora.                 |
+| `word`              | Abre Microsoft Word.                 |
+| `copiar`            | Copia la selección actual.           |
+| `v`                 | Pega el contenido copiado.           |
+| `z`                 | Deshace el último cambio.            |
+| `x`                 | Corta la selección actual.           |
+| `todo`              | Selecciona todo el contenido.        |
+| `f4`                | Cierra la ventana activa.            |
+| `recarga`           | Refresca la página activa.           |
 
 ---
 

@@ -115,27 +115,27 @@ def execute(self, command, voice):
 
 | **Keyword**         | **Action**                           |
 |---------------------|--------------------------------------|
-| `viernes`            | Responds to your request.           |
-| `hora`              | Indicates the current time.         |
-| `apagar`          | Shuts down the system.              |
-| `captura`        | Takes a screenshot.                 |
-| `escritorio`           | Minimizes or restores windows.      |
-| `teclado`          | Changes the keyboard layout.        |
-| `configuracion`          | Opens system settings.              |
-| `terminal`          | Opens the command terminal.         |
-| `archivos`             | Opens the file explorer.            |
-| `tareas`             | Opens the task manager.             |
-| `navegador`           | Opens the browser.                  |
-| `notas`             | Opens the notepad.                  |
-| `calculadora`        | Opens the calculator.               |
-| `word`              | Opens Microsoft Word.               |
-| `copiar`              | Copies the current selection.       |
-| `v`                 | Pastes the copied content.         |
-| `z`                 | Undoes the last change.            |
-| `x`                 | Cuts the current selection.        |
-| `todo`        | Selects all content.               |
-| `f4`                | Closes the active window.          |
-| `recarga`           | Refreshes the active page.         |
+| `viernes`           | Responds to your request.            |
+| `hora`              | Indicates the current time.          |
+| `apagar`            | Shuts down the system.               |
+| `captura`           | Takes a screenshot.                  |
+| `escritorio`        | Minimizes or restores windows.       |
+| `teclado`           | Changes the keyboard layout.         |
+| `configuracion`     | Opens system settings.               |
+| `terminal`          | Opens the command terminal.          |
+| `archivos`          | Opens the file explorer.             |
+| `tareas`            | Opens the task manager.              |
+| `navegador`         | Opens the browser.                   |
+| `notas`             | Opens the notepad.                   |
+| `calculadora`       | Opens the calculator.                |
+| `word`              | Opens Microsoft Word.                |
+| `copiar`            | Copies the current selection.        |
+| `v`                 | Pastes the copied content.           |
+| `z`                 | Undoes the last change.              |
+| `x`                 | Cuts the current selection.          |
+| `todo`              | Selects all content.                 |
+| `f4`                | Closes the active window.            |
+| `recarga`           | Refreshes the active page.           |
 
 ---
 
