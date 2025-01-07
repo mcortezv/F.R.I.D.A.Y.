@@ -23,7 +23,7 @@ class Voice:
             audio = self.recognizer.listen(source)
         try:
             text = self.recognizer.recognize_google(audio, language = "es").lower()
-            return "viernes estas ahi" in text or "viernes estas despierta" in text
+            return "viernes" in text or "despierta" in text
         except sr.UnknownValueError:
             return False
 

@@ -45,9 +45,10 @@ class Command:
         for key in self.command_dict.keys():
             if key in command:
                 voice.speak(self.command_dict[key]())
+                return
         else:
             voice.speak("No comprendo la instrucción señor.")
-    
+        
     @staticmethod
     def random_response(responses):
         return choice(responses)

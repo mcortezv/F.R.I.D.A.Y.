@@ -13,6 +13,7 @@ from voice import Voice
 class Assistant:
     def __init__(self):
         self.voice = Voice()
+        self.command = Command()
         self.activated = False
 
     def run(self):
@@ -29,7 +30,7 @@ class Assistant:
                                                               "Muy bien, señor. Fue un gusto ayudarlo. Apagada..."]))
                     break
                 else:
-                    Command.execute(command, self.voice)
+                    self.command.execute(command, self.voice)
 
 if __name__ == "__main__":
     assistant = Assistant()

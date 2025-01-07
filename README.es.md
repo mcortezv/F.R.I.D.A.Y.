@@ -30,11 +30,12 @@ A diferencia de otros asistentes virtuales, F.R.I.D.A.Y. **no requiere dividir l
 Cuando utilizas `split()`, el comando se divide en palabras individuales, y cada palabra es evaluada por separado. Esto significa que la palabra clave debe estar presente como una palabra separada dentro del comando.
 ```python
 def execute(self, command, voice):
-    for key in self.command_dict.keys():
-        if any(key in word for word in command.split()):  # Divide el comando en palabras y busca la clave en cada una
-            voice.speak(self.command_dict[key]())
-        else:
-            voice.speak("No comprendo la instrucción, señor.")
+   for key in self.command_dict.keys():
+      if any(key in word for word in command.split()):  # Divide el comando en palabras y busca la clave en cada una
+         voice.speak(self.command_dict[key]())
+         return
+   else:
+         voice.speak("No comprendo la instrucción, señor.")
 ```
 ### Desventajas de usar `split()`:
 - **Requiere que las palabras clave estén separadas:** Si la palabra clave está unida a otras palabras, como en una frase como "abrir navegador por favor", el sistema no la detectará correctamente.
@@ -47,12 +48,13 @@ def execute(self, command, voice):
 Al no usar `split()`, el sistema busca la palabra clave dentro de toda la cadena del comando. Esto significa que el sistema puede encontrar la palabra clave incluso si está unida a otras palabras o en diferentes partes de la frase, lo que da mucha más flexibilidad en cómo los usuarios pueden expresar el comando.
 
 ```python
-def execute(self, command, voice):
-    for key in self.command_dict.keys():
-        if key in command:  # Busca la palabra clave en todo el comando
-            voice.speak(self.command_dict[key]())
-        else:
-            voice.speak("No comprendo la instrucción, señor.")
+def  execute(self, command, voice):
+   for key in self.command_dict.keys():
+      if key in command: # Busca la palabra clave en todo el comando
+         voice.speak(self.command_dict[key]())
+         return
+   else:
+      voice.speak("No comprendo la instrucción señor.")
 ```
 
 ### Ventajas de no usar `split()`:

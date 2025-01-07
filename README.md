@@ -31,11 +31,12 @@ Unlike other virtual assistants, F.R.I.D.A.Y. **does not require dividing instru
 When using `split()`, the command is divided into individual words, and each word is evaluated separately. This means the keyword must be present as a separate word within the command.
 ```python
 def execute(self, command, voice):
-    for key in self.command_dict.keys():
-        if any(key in word for word in command.split()):  # Splits the command into words and searches for the keyword in each
-            voice.speak(self.command_dict[key]())
-        else:
-            voice.speak("I don't understand the command, sir.")
+   for key in self.command_dict.keys():
+      if any(key in word for word in command.split()):  # Splits the command into words and searches for the keyword in each
+         voice.speak(self.command_dict[key]())
+         return
+   else:
+      voice.speak("I don't understand the command, sir.")
 ```
 ### Disadvantages of using `split()`:
 - **Requires keywords to be separate:** If the keyword is joined with other words, like in a phrase such as "open browser please", the system won't detect it correctly.
@@ -49,11 +50,11 @@ By not using `split()`, the system looks for the keyword throughout the entire c
 
 ```python
 def execute(self, command, voice):
-    for key in self.command_dict.keys():
-        if key in command:  # Searches for the keyword throughout the command
-            voice.speak(self.command_dict[key]())
-        else:
-            voice.speak("I don't understand the command, sir.")
+   for key in self.command_dict.keys():
+      if key in command:  # Searches for the keyword throughout the command
+         voice.speak(self.command_dict[key]())
+      else:
+         voice.speak("I don't understand the command, sir.")
 ```
 
 ### Advantages of not using `split()`:
