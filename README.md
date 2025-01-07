@@ -1,7 +1,6 @@
-
 # **F.R.I.D.A.Y.**
 
-F.R.I.D.A.Y. (**"Female Replacement Intelligent Digital Assistant Youth"**) is a virtual assistant programmed in Python, designed to facilitate daily tasks through voice commands. This project places special emphasis on its ability to adapt to a variety of commands thanks to its flexibility in recognizing instructions. Inspired by the Iron Man movies, just like Tony Stark uses advanced artificial intelligence systems, this project aims to emulate that experience, providing a flexible assistant that adapts to the user's needs.
+F.R.I.D.A.Y. (**"Female Replacement Intelligent Digital Assistant Youth"**) is a virtual assistant programmed in Python, designed to facilitate daily tasks through voice commands. This project places special emphasis on its ability to adapt to a variety of commands thanks to its flexibility in recognizing instructions. Inspired by the Iron Man movies, just like Tony Stark uses advanced artificial intelligence systems, this project aims to emulate that experience, providing a flexible assistant that adapts to the user's needs. [Versión Español](./README.es.md)
 
 ---
 
@@ -53,8 +52,9 @@ def execute(self, command, voice):
    for key in self.command_dict.keys():
       if key in command:  # Searches for the keyword throughout the command
          voice.speak(self.command_dict[key]())
-      else:
-         voice.speak("I don't understand the command, sir.")
+         return
+   else:
+      voice.speak("I don't understand the command, sir.")
 ```
 
 ### Advantages of not using `split()`:
@@ -87,7 +87,7 @@ def execute(self, command, voice):
 
 ### 1. Clone this repository:
    ```bash
-   git clone https://github.com/mcortezv/F.R.I.D.A.Y.
+   git clone https://github.com/mcortezv/F.R.I.D.A.Y. F.R.I.D.A.Y
    ```
 
 ### 2. Install the necessary dependencies:
